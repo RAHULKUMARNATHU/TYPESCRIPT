@@ -1,8 +1,8 @@
 // Interface
 var data = {
-    name: "nahtu",
+    name: "nathu",
     age: 25,
-    email: "nathu@gmail.com",
+    // email: "nathu@gmail.com",
     getData: function () {
         return "nathu";
     }

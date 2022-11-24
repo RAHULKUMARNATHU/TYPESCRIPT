@@ -1,16 +1,16 @@
 // Interface
 
-interface usertype {
+interface userType {
   name: string;
   age: number;
-  email: string;
+  email?: string;
   getData: () => string;
 }
 
-let data = {
-  name: "nahtu",
+let data: userType = {
+  name: "nathu",
   age: 25,
-  email: "nathu@gmail.com",
+  // email: "nathu@gmail.com",
   getData: function () {
     return "nathu";
   },
