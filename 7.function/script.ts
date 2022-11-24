@@ -1,4 +1,4 @@
-// function declearation in different  ways
+// function declaration in different  ways
 
 // Way 1 ::
 
