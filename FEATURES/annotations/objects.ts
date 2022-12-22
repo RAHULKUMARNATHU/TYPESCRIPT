@@ -1,6 +1,6 @@
 const profile = {
-  age: 20,
-  name: "alex",
+  name1: "nathu",
+  age: 24,
   coords: {
     lat: 0,
     lng: 15,
@@ -9,14 +9,10 @@ const profile = {
     this.age = age;
   },
 };
-console.log(profile.name);
 
-const { age ,coords:{lat, lng}}: { age: number , coords:{lat:number , lng:number} } = profile;
+//
+const { age, name1 }: { age: number; name1: string } = profile;
 
-console.log(age );
-console.log(lng ,lat);
-
-
-
-//   const { name, age }: { name: string; age: number } = profile;
-//   const {coords: { lat, lng }}: { coords: { lat: number; lng: number } } = profile;
+const {
+  coords: { lat, lng },
+}: { coords: { lat: number; lng: number } } = profile;
