@@ -6,11 +6,8 @@ var oldCivic = {
         return "Name : ".concat(this.name);
     }
 };
-var printVehicle = function (vehicle) {
-    console.log("Name:".concat(vehicle.name));
-    console.log("Year:".concat(vehicle.year));
-    console.log("broken:".concat(vehicle.broken));
-    console.log("Summary:".concat(vehicle.summary()));
+var printSummary = function (item) {
+    console.log("Summary:".concat(item.summary()));
 };
 // const printVehicle = (vehicle: {
 //   name: string;
@@ -21,4 +18,13 @@ var printVehicle = function (vehicle) {
 //   console.log(`Year:${vehicle.year}`);
 //   console.log(`broken:${vehicle.broken}`);
 // };
-printVehicle(oldCivic);
+var drink = {
+    color: "brown",
+    sugar: 40,
+    carbonated: true,
+    summary: function () {
+        return "My drink has ".concat(this.sugar, " grams of sugar");
+    }
+};
+printSummary(oldCivic);
+printSummary(drink);
